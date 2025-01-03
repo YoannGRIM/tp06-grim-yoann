@@ -1,0 +1,84 @@
+/* catalogue.component.css */
+.catalogue-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.catalogue-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.catalogue-container button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.catalogue-container button:hover {
+  background-color: #0056b3;
+}
+
+.catalogue-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalogue-container li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.catalogue-container li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.catalogue-container h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.catalogue-container p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.catalogue-container strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #28a745;
+}
+
+.catalogue-container p + p {
+  margin-top: 10px;
+}
+
+.catalogue-container .unauthorize {
+  text-align: center;
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 20px;
+}

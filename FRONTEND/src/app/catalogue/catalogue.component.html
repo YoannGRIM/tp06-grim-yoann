@@ -1,0 +1,16 @@
+<div class="catalogue-container">
+  <h1>Catalogue de Produits</h1>
+  <button (click)="onClick()">Rafraîchir</button>
+
+  <ul *ngIf="produits$ | async as produits; else unauthorize">
+    <li *ngFor="let produit of produits">
+      <h2>{{ produit.name }}</h2>
+      <p>Description : {{ produit.description }}</p>
+      <strong>{{ produit.price | currency }}</strong>
+    </li>
+  </ul>
+
+  <ng-template #unauthorize>
+    <p>Veuillez vous identifier avant de charger le catalogue</p>
+  </ng-template>
+</div>
