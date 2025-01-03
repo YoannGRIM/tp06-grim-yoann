@@ -27,6 +27,18 @@ export class ApiService {
     );
   }
 
+  public registerClient(client: Client): Observable<Client> {
+    return this.http.post<Client>(environment.backendRegisterClient, client);
+  }
+
+  public getClientInfo(): Observable<Client> {
+    return this.http.get<Client>(environment.backendClientInfo);
+  }
+
+  public updateClientInfo(client: Client): Observable<Client> {
+    return this.http.put<Client>(environment.backendUpdateClient, client);
+  }
+
   public getCalague(): Observable<Produit[]> {
     return this.http.get<Produit[]>(environment.backendCatalogue);
   }
